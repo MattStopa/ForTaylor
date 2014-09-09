@@ -35,6 +35,7 @@ end
 
 get '/edit' do
   @record = User.find(params[:id])
+
   erb :edit
 end
 

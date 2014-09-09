@@ -1,0 +1,11 @@
+Edit Your Record
+
+<form action="/update" method="post">
+  First Name
+  <input type="hidden" name="id" value="<%= @record.id %>">
+  <input type="text" name="first" value="<%= @record.FirstName %>">
+  <br>
+  Last Name
+  <input type="text" name="last" value="<%= @record.LastName %>">
+  <input type="submit">
+</form>

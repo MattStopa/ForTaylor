@@ -1,7 +1,7 @@
-<b>Edit Your Record</b>
+<b>Add New User</b>
 <br>
 <br>
-<form action="/update" method="post">
+<form action="/add" method="post">
   First Name
   <input type="hidden" name="id" value="<%= @record.id %>">
   <input type="text" name="first" value="<%= @record.FirstName %>">
@@ -10,5 +10,6 @@
   <input type="text" name="last" value="<%= @record.LastName %>">
   <input type="submit">
 </form>
+<br>
 <a href="/search">All Records</a>
 <a href="/home">Home</a>

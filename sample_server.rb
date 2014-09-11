@@ -3,6 +3,7 @@ require 'sinatra'
 require 'mysql2'
 require 'active_record'
 
+#rvm gemset use main
 ActiveRecord::Base.establish_connection(
   :adapter  => "mysql2",
   :username => "root",
@@ -13,11 +14,20 @@ class User < ActiveRecord::Base
 end
 
 get '/add' do
-  User.count.to_s
-  u = User.new
-  u.FirstName = params[:first]
-  u.LastName = params[:last]
-  u.save
+  
+  erb :add
+  
+#OLD CODE 
+#User.count.to_s
+#u = User.new
+#u.FirstName = params[:first]
+#u.LastName = params[:last]
+#u.save
+end
+
+get '/home' do 
+ 
+  erb :home
 end
 
 get '/search' do
@@ -35,7 +45,6 @@ end
 
 get '/edit' do
   @record = User.find(params[:id])
-
   erb :edit
 end
 

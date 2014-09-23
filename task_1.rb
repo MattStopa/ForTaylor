@@ -25,7 +25,7 @@ end
 
 # 4. Get the user's bank balance. If less than zero, say "Oh you are in trouble"
 #    If greater than zero but less than 100 say "You can buy McDonalds. Yay"
-#    If greater than 1000 say "Wow you are rich!!!"
+#    If greater than 1000 say "Wow you are rich!!!" (conversion)
 
 # 5. Ask the user how happy they are from 1 to 10. Print out "Happy" between 1 and 10 times
 #    based on what they said. (conversion)

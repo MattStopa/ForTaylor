@@ -26,7 +26,10 @@ end
 #    If greater than zero but less than 100 say "You can buy McDonalds. Yay"
 #    If greater than 1000 say "Wow you are rich!!!" (conversion)
 puts "Enter your bank account balance:"
-bal = gets.chomp.to_i
+bal = get_input.to_i
+if bal <0
+	puts "Oh you're in trouble!"
+end
 if bal >0 and bal <100
 	puts "Yay! You can buy McDonalds!"
 elsif bal >1000
